@@ -1,6 +1,7 @@
 .intro{
-  position: fixed;
-  height: 17%;
+  position: relative;
+  padding: 2% 0;
+  margin-bottom: 15px;
   width: 100%;
   left: 0;
   top: 0;
@@ -8,5 +9,10 @@
   &_headline{
     font-size: 54px;
     text-align: center;
+    &_icon{
+      margin-right: 8px;
+      opacity: 0.6;
+      color: cornflowerblue;
+    }
   }
 }

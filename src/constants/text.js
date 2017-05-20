@@ -1,2 +1,11 @@
 export const HEADLINE = 'InfoMaps';
-export const DESCRIPTION = 'This tapp lets chayns® Managers switch to an \'admin mode\' which displays secured content and enables to select users via the chayns® person finder. Selected users will be added to a list that can be seen in both admin and user modes.This is an example of a ModeSwitch implementation and shows you how to secure content by UAC groups.';
+export const FACTOR_1 = 'Labour Force Status';
+export const FACTOR_2 = 'Weekly Household Income';
+export const FACTOR_3 = 'Weekly Personal Income';
+export const FACTOR_4 = 'Indigenous Status';
+export const FACTOR_5 = 'Highest Year of School Completed';
+export const FACTOR_6 = 'Highest Level of Education';
+export const FACTOR_7 = 'Country of Birth';
+export const FACTOR_8 = 'Disability Assistance Required';
+export const FACTOR_9 = 'Family Composition';
+export const FACTOR_10 = 'Religion';

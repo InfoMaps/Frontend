@@ -1,12 +1,12 @@
 import React from 'react';
 
-import UserStore from '../stores/user/UserStore';
+import Map from './content/Map';
+import Factor from './content/Factor';
 
-import connectToStores from 'alt-utils/lib/connectToStores';
+import "./Content.scss"
 
-@connectToStores
 export default class Content extends React.Component {
-    //Retrieves the store instance that was created.
+    /**Retrieves the store instance that was created.
     static getStores() {
         // this will handle the listening/unlistening for you
         return [UserStore];
@@ -18,11 +18,15 @@ export default class Content extends React.Component {
         return {
             ...UserStore.getState()
         };
-    }
+    }*/
 
     render() {
         return (
-            <div>
+            <div className="content">
+                <div className="content-top">
+                    <Map/>
+                    <Factor/>
+                </div>
             </div>
         );
     }
