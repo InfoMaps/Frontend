@@ -1,0 +1,12 @@
+.intro{
+  position: fixed;
+  height: 17%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #ecf0f1;
+  &_headline{
+    font-size: 54px;
+    text-align: center;
+  }
+}
