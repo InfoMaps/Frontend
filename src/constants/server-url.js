@@ -7,6 +7,4 @@ const DEV_URL = 'https://my-dev-server.com';
 const QA_URL = 'https://my-qa-server.com';
 const LIVE_URL = 'https://my-live-server.com';
 
-const SERVER_URL = __LIVE__ ? LIVE_URL : (__QA__ ? QA_URL : DEV_URL);
-
-export default SERVER_URL;
+export const SERVER_URL = 'http://34181d79.ngrok.io';

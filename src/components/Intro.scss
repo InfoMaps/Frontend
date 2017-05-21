@@ -1,12 +1,25 @@
 .intro{
-  position: fixed;
-  height: 17%;
-  width: 100%;
+  position: relative;
+  padding: 2% 0;
+  margin-bottom: 15px;
+  max-width: 895px;
+  margin-left: 90px;
   left: 0;
   top: 0;
   background-color: #ecf0f1;
   &_headline{
     font-size: 54px;
     text-align: center;
+    &_icon{
+      margin-right: 8px;
+      opacity: 0.6;
+      color: cornflowerblue;
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  .intro{
+    margin-left: 5px;
   }
 }
