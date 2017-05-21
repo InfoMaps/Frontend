@@ -42,9 +42,11 @@
     "alt": "^0.18.6",
     "alt-utils": "^1.0.0",
     "classnames": "^2.2.5",
+    "highcharts": "^5.0.11",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "whatwg-fetch": "^2.0.3"
   },
   "keywords": [
     "giveback",

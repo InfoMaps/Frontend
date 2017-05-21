@@ -4,13 +4,8 @@ import Checkbox from "material-ui/Checkbox";
 import { FACTOR_1 } from '../../constants/text';
 import { FACTOR_2 } from '../../constants/text';
 import { FACTOR_3 } from '../../constants/text';
-import { FACTOR_4 } from '../../constants/text';
 import { FACTOR_5 } from '../../constants/text';
-import { FACTOR_6 } from '../../constants/text';
-import { FACTOR_7 } from '../../constants/text';
-import { FACTOR_8 } from '../../constants/text';
-import { FACTOR_9 } from '../../constants/text';
-import { FACTOR_10 } from '../../constants/text';
+import { FACTOR_11} from '../../constants/text';
 
 import "./Factor.scss"
 
@@ -21,54 +16,51 @@ const CHECKBOX_STYLE = {
 export default class Factor extends React.Component{
     constructor(){
         super();
+        this.state = {
+            labourForce: true,
+            houseIncome: false,
+            personalIncome: false,
+            highestSchoolYear: false,
+            englishLevel: false
+        }
     }
 
     render(){
         return (
-            <MUI>
-                <div className="factor">
-                    <Checkbox
-                        label={FACTOR_1}
-                        style={CHECKBOX_STYLE}
-                    />
-                    <Checkbox
-                        label={FACTOR_2}
-                        style={CHECKBOX_STYLE}
-                    />
-                    <Checkbox
-                        label={FACTOR_3}
-                        style={CHECKBOX_STYLE}
-                    />
-                    <Checkbox
-                        label={FACTOR_4}
-                        style={CHECKBOX_STYLE}
-                    />
-                    <Checkbox
-                        label={FACTOR_5}
-                        style={CHECKBOX_STYLE}
-                    />
-                    <Checkbox
-                        label={FACTOR_6}
-                        style={CHECKBOX_STYLE}
-                    />
-                    <Checkbox
-                        label={FACTOR_7}
-                        style={CHECKBOX_STYLE}
-                    />
-                    <Checkbox
-                        label={FACTOR_8}
-                        style={CHECKBOX_STYLE}
-                    />
-                    <Checkbox
-                        label={FACTOR_9}
-                        style={CHECKBOX_STYLE}
-                    />
-                    <Checkbox
-                        label={FACTOR_10}
-                        style={CHECKBOX_STYLE}
-                    />
+            <div>
+                <div className="selected_lga">
+                    {this.props.selectedLGA}
                 </div>
-            </MUI>
+                <MUI>
+                    <div className="factor">
+                        <Checkbox
+                            checked={this.state.labourForce}
+                            label={FACTOR_1}
+                            style={CHECKBOX_STYLE}
+                        />
+                        <Checkbox
+                            checked={this.state.houseIncome}
+                            label={FACTOR_2}
+                            style={CHECKBOX_STYLE}
+                        />
+                        <Checkbox
+                            checked={this.state.personalIncome}
+                            label={FACTOR_3}
+                            style={CHECKBOX_STYLE}
+                        />
+                        <Checkbox
+                            checked={this.state.englishLevel}
+                            label={FACTOR_11}
+                            style={CHECKBOX_STYLE}
+                        />
+                        <Checkbox
+                            checked={this.state.highestSchoolYear}
+                            label={FACTOR_5}
+                            style={CHECKBOX_STYLE}
+                        />
+                    </div>
+                </MUI>
+            </div>
         )
     }
 }

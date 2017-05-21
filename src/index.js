@@ -17,7 +17,7 @@ async function init() {
     try {
         render(App);
     } catch (err) {
-        console.warn('no chayns environment found');
+        console.warn('Error while loading environment: ',err);
     }
 }
 

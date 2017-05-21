@@ -1,8 +1,18 @@
 .content{
   padding: 30px 50px 20px 50px;
   background-color: #ecf0f1;
+  max-width: 795px;
+  margin-left: 90px;
 },
 .content-top{
   display: flex;
-  align-items: center;
+}
+
+@media screen and (max-width: 800px){
+  .content{
+    margin-left: 5px;
+  }
+  .content-top{
+    display: block;
+  }
 }

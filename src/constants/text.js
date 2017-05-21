@@ -1,4 +1,4 @@
-export const HEADLINE = 'InfoMaps';
+export const HEADLINE = 'ImpactMaps';
 export const FACTOR_1 = 'Labour Force Status';
 export const FACTOR_2 = 'Weekly Household Income';
 export const FACTOR_3 = 'Weekly Personal Income';
@@ -9,3 +9,4 @@ export const FACTOR_7 = 'Country of Birth';
 export const FACTOR_8 = 'Disability Assistance Required';
 export const FACTOR_9 = 'Family Composition';
 export const FACTOR_10 = 'Religion';
+export const FACTOR_11 = 'Level of English';
